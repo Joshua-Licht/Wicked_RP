@@ -574,6 +574,7 @@ nav {
     padding: 0 32px;
     display: flex;
     justify-content: center;
+    margin: 0 AUTO;
 }
 .banner__container--para{
     width: 100%;
@@ -591,12 +592,12 @@ nav {
     align-items: center;
     width: 100%;
     max-width: 20rem;
+    margin: 0 auto;
 }
 .banner__btn{
     display: flex;
     align-items: center;
     padding: 20px 40px;
-    margin-left: 60px;
     border-radius: 40px;
     font-size: 1rem;
     font-weight: 700;
@@ -619,6 +620,7 @@ footer{
 .links{
     display: flex;
     flex-direction: row;
+    margin: 0 20px;
 }
 .link{
     display: flex;
@@ -885,6 +887,24 @@ Responsive alteration
     .links{
         padding-top: 20px;
     }
+    .link{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .link__description{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-top: 12px;
+    }
+    .link__description--title{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .link__description--para{
+        text-align: center;
+    }
     .footer__divider{
         margin: 32px 0;
     }
@@ -929,10 +949,14 @@ Responsive alteration
     .game__description--title{
         text-align: center;
     }
+    .links{
+        flex-wrap: wrap;
+    }
     .link{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: calc(100% / 2 - 25px);
     }
     .link__description{
         display: flex;
@@ -948,18 +972,35 @@ Responsive alteration
         text-align: center;
     }
 
+    .footer__info{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__info{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__img--title{
+        font-size: 1.2rem;
+    }
     .footer__img{
-        width: 3rem;
+        width: 3.5rem;
     }
     .footer__img--title{
         font-size: .75rem;
     }
     .footer__copywrite{
-        font-size: .75rem;
+        margin-top: 32px;
+        font-size: 1rem;
+    }
+    .footer__social{
+        margin-top: 32px;
     }
     .footer__socail--link svg{
-        width: 1rem;
-        height: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 }
 /* Small Phones, Large Phones  */
@@ -973,9 +1014,6 @@ Responsive alteration
     .banner__para{
         font-size: 1.2rem;
     }
-    .banner__btn{
-        margin: 0 auto;
-    }
 
     .link__icon{
         font-size: 1.5rem;
@@ -985,29 +1023,6 @@ Responsive alteration
     }
     .link__description--para{
         font-size: .75rem;
-    }
-
-    .footer__info{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .footer__img--title{
-        font-size: 1.2rem;
-    }
-    .footer__img{
-        width: 3.5rem;
-    }
-    .footer__copywrite{
-        margin-top: 32px;
-        font-size: 1rem;
-    }
-    .footer__social{
-        margin-top: 32px;
-    }
-    .footer__socail--link svg{
-        width: 1.5rem;
-        height: 1.5rem;
     }
 }
 @media (max-width: 480px){
@@ -1023,11 +1038,5 @@ Responsive alteration
     .banner__btn{
         text-align: center;
         font-size: .85rem;
-    }
-    .links{
-        flex-wrap: wrap;
-    }
-    .link{
-        width: calc(100% / 2 - 25px);
     }
 }
