@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1276d6d989.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <section id="about">
+        <nav>
+            <div class="nav__logo">Wicked RP</div>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a href="#services" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                    ">Services</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#staff" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                    ">Staff</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                        nav__link--anchor
+                        nav__link--anchor-primary
+                        no-cursor
+                    ">Shop</a>
+                </li>
+            </ul>
+
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a class="menu__link" href="#services" onclick="closeMenu()">Services</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link" href="#staff" onclick="closeMenu()">Staff</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link no-cursor" href="#" onclick="closeMenu()">Shop</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header>
+            <div class="container">
+                <div class="row flex">
+                    <div class="header__container">
+                        <h2 class="header__title">Welcome To <span
+                            class="text__color">Wicked RP!</span></h2>
+                        <p class="header__para">
+                            Wicked RP is a gaming community started by 2 close friends. Wanting a place to hang out an play some games together,
+                            Sharky and Jolk started a FiveM server. Sharky’s knowledge in IT and server hosting & management and Jolk’s knowledge in
+                            media creation helped make the community what it is today.
+                        </p>
+                        <p class="header__para">
+                            The 2 started on the FiveM platform for GTA V but have plans to expand to other games in the future, such as Space
+                            Engineers, Satisfactory, American Truck Simulator, and much more.
+                        </p>
+                        <button class="btn-primary header__btn">
+                            JOIN TODAY
+                            <a href="https://discord.gg/wickedrp"></a>
+                        </button>
+                    </div>
+                    <div class="header__img--wrapper">
+                        <img src="./assets/wicked__icon.png" alt="" class="header__img">
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <main>
+        <section id="services">
+            <div class="container">
+                <div class="row flex">
+                    <div class="sec__img--wrapper">
+                        <img src="./assets/charger_red.png" alt="charger red" class="service__img">
+                    </div>
+                    <div class="sec__container left">
+                        <div class="sec__description">
+                            <h5 class="sec__title">What We Provide</h5>
+                            <h1 class="sec__description--title"><span class="text__color">Our Servers</span></h1>
+                            <p class="sec__description--para">
+                                We currently only offer a FiveM RP server but plan to branch out to more games down the line. Feel free to check out our
+                                servers.
+                            </p>
+                            <ul class="services">
+                                <li class="service">
+                                    <h1 class="service__icon">
+                                        <i class="fa-solid fa-house"></i>
+                                    </h1>
+                                    <div class="service__description">
+                                        <h6 class="service__description--title">FiveM</h6>
+                                        <h3 class="service__description--sub_title">
+                                            Wicked Life RP
+                                        </h3>
+                                        <p class="service__description--para">
+                                            Built on the latest version of the vRP framework, we offer a server that focus on realism. You can live the life of a
+                                            normal Civilian with the multiple jobs to choose from, or live the life as a Criminal and build an underground empire.
+                                            There are also opportunities to become a Law Enforcement Officer, Firefighter, Paramedic, or even a Emergency
+                                            Dispatcher.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="play">
+            <div class="container">
+                <div class="row flex">
+                    <div class="sec__container left">
+                        <div class="sec__description">
+                            <h5 class="sec__title">What We Play</h5>
+                            <h1 class="sec__description--title"><span class="text__color">Our Games</span></h1>
+                            <p class="sec__description--para">
+                                We currently play multiple games with the community. These games include, but are not limited to, FiveM, Sea of Thieves,
+                                American Truck Sim, ARK: Survival Evolved, and Farming Sim 19. We have dedicated groups/companies for FiveM and ATS with
+                                opportunities to manage your own group inside of the Wicked RP Gaming Community.
+                            </p>
+                            <ul class="games">
+                                <li class="game">
+                                    <h1 class="game__icon">
+                                        <i class="fa-solid fa-house"></i>
+                                    </h1>
+                                    <div class="game__description">
+                                        <h6 class="game__description--title">FiveM</h6>
+                                        <h3 class="game__description--sub_title">
+                                            Wicked Life RP
+                                        </h3>
+                                        <p class="game__description--para">
+                                            Built on the latest version of the vRP framework, we offer a server that focus on realism. You can live the life of a
+                                            normal Civilian with the multiple jobs to choose from, or live the life as a Criminal and build an underground empire.
+                                            There are also opportunities to become a Law Enforcement Officer, Firefighter, Paramedic, or even a Emergency
+                                            Dispatcher.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="game">
+                                    <h1 class="game__icon">
+                                        <i class="fa-regular fa-address-card"></i>
+                                    </h1>
+                                    <div class="game__description">
+                                        <h6 class="game__description--title">American Trucking Simulator</h6>
+                                        <h3 class="game__description--sub_title">
+                                            Wicked Logistics
+                                        </h3>
+                                        <p class="game__description--para">
+                                            Managed via TrucksBooks, Wicked Logistics was started at the beginning of July 2021. We offer a wide range of fun from
+                                            living the life as a Truck Driver to the clerical life of a Truck Company manger. To find out more about the Wicked
+                                            Logistics Company, please join our discord server.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="game">
+                                    <h1 class="game__icon">
+                                        <i class="fa-regular fa-compass"></i>
+                                    </h1>
+                                    <div class="game__description">
+                                        <h6 class="game__description--title">Sea of Thieves</h6>
+                                        <p class="game__description--para">
+                                            Set sail with your crew and take on the seas of Pirates. Live your life as a pirate on and adventure to search for the
+                                            worlds riches and secrets. Join our discord server to learn more about our adventures.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="game">
+                                    <h1 class="game__icon">
+                                        <i class="fa-solid fa-globe"></i>
+                                    </h1>
+                                    <div class="game__description">
+                                        <h6 class="game__description--title">ARK: Survival Evolved</h6>
+                                        <p class="game__description--para">
+                                            Start your life in prehistoric times. Build your way up to the age of technology. Work together with your friends or try
+                                            your hand at lone survival.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sec__img--wrapper">
+                        <img src="./assets/truck_bridge.png" alt="charger red" class="game__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="staff">
+            <div class="container">
+                <div class="row__column">
+                    <h5 class="sec__title">Our Team</h5>
+                    <h2 class="sec__description--title">Meet Our <span class="text__color">Community Owners.</span></h2>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card__heading">
+                                <div class="card__img--wrapper">
+                                    <img src="./assets/Sharky.png" alt="Sharky Image" class="card__img">
+                                </div>
+                                <h1 class="heading__title">Sharky</h1>
+                                <h3 class="heading__position">Co-Owner</h3>
+                                <h3 class="heading__position">Head of Development</h3>
+                            </div>
+                            <div class="stripe"></div>
+                            <p class="card__para">
+                                With an extensive background in IT and server management, Sharky is the Director of Development for the Wicked RP
+                                community.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="card__heading">
+                                <div class="card__img--wrapper">
+                                    <img src="./assets/no_img.png" alt="Jolk Image" class="card__img">
+                                </div>
+                                <h1 class="heading__title">Jolk</h1>
+                                <h3 class="heading__position">Co-Owner</h3>
+                                <h3 class="heading__position">Head of Media</h3>
+                            </div>
+                            <div class="stripe"></div>
+                            <p class="card__para">
+                                With a background of design and media creation, Jolk is the Director of Media Development for the Wicked RP community.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="card__heading">
+                                <div class="card__img--wrapper">
+                                    <img src="./assets/Noah.png" alt="Noah Image" class="card__img">
+                                </div>
+                                <h1 class="heading__title">Noah Smith</h1>
+                                <h3 class="heading__position">Co-Owner</h3>
+                                <h3 class="heading__position">Head of Community</h3>
+                            </div>
+                            <div class="stripe"></div>
+                            <p class="card__para">
+                                With an extensive background in community management, Hoah is the Director of Community Engagement for the Wicked RP
+                                community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="banner__container">
+                        <div class="banner__container--info">
+                            <div class="banner__container--para">
+                                <p class="banner__para">
+                                    Want to have fun playing games with a great community? Come join Wicked and you’ll have a blast.
+                                </p>
+                            </div>
+                            <div class="banner__container--btn">
+                                <a href="https://discord.gg/wickedrp" class="banner__btn ">Join the community</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <ul class="links">
+                        <li class="link">
+                            <h1 class="link__icon">
+                                <i class="fa-solid fa-house"></i>
+                            </h1>
+                            <div class="link__description">
+                                <h6 class="link__description--title">FiveM</h6>
+                                <p class="link__description--para">
+                                    Live in GTA V with a realistic economy and plenty of stuff to do.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="link">
+                            <h1 class="link__icon">
+                                <i class="fa-solid fa-city"></i>
+                            </h1>
+                            <div class="link__description">
+                                <h6 class="link__description--title">Community Engagement</h6>
+                                <p class="link__description--para">
+                                    We listen to the requests of our community to get resources added.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="link">
+                            <h1 class="link__icon">
+                                <i class="fa-solid fa-people-group"></i>
+                            </h1>
+                            <div class="link__description">
+                                <h6 class="link__description--title">Active Staff</h6>
+                                <p class="link__description--para">
+                                    Our staff works hard to build a quality community.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="link">
+                            <h1 class="link__icon">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </h1>
+                            <div class="link__description">
+                                <h6 class="link__description--title">Regular Updates</h6>
+                                <p class="link__description--para">
+                                    Active development to provide fresh features and fun events.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="footer__divider"></div>
+                    <div class="footer__info">
+                        <div class="footer__img--wrapper">
+                            <img src="./assets/wicked__icon.png" class="footer__img" alt="">
+                            <h5 class="footer__img--title">Wicked RP</h5>
+                        </div>
+                        <p class="footer__copywrite">
+                            &copy; 2019-2021 Wicked RP | All Rights Reserved.
+                        </p>
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/WickedRPC" class="footer__socail--link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                            </a>
+                            <a href="https://twitter.com/rp_wicked" class="footer__socail--link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                            </a>
+                            <a href="https://www.instagram.com/wicked_liferp/" class="footer__socail--link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCstYsf6JBhRP_JeSuW-klDQ" class="footer__socail--link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
