@@ -926,7 +926,9 @@ Responsive alteration
     .game__description--para{
         text-align: center;
     }
-    
+    .game__description--title{
+        text-align: center;
+    }
     .link{
         flex-direction: column;
         align-items: center;
@@ -964,6 +966,9 @@ Responsive alteration
 @media (max-width: 550px){
     .sec__description--title{
         font-size: 2rem;
+    }
+    .game__description--title{
+        text-align: center;
     }
     .banner__para{
         font-size: 1.2rem;
@@ -1003,5 +1008,26 @@ Responsive alteration
     .footer__socail--link svg{
         width: 1.5rem;
         height: 1.5rem;
+    }
+}
+@media (max-width: 480px){
+    .sec__description--title{
+        font-size: 1.75rem;
+    }
+    .cards{
+        padding: 60px;
+    }
+    .banner__container--info{
+        padding: 0;
+    }
+    .banner__btn{
+        text-align: center;
+        font-size: .85rem;
+    }
+    .links{
+        flex-wrap: wrap;
+    }
+    .link{
+        width: calc(100% / 2 - 25px);
     }
 }
